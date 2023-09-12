@@ -7,10 +7,17 @@
   <title>My weather app</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      body {
+          
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="bg-info">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Weather App</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -44,7 +51,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+          <button class="btn btn-outline-success btn-warning" type="submit" id="submit">Search</button>
         </form>
       </div>
     </div>
@@ -54,8 +61,8 @@
     <main>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
               <h4 class="my-0 fw-normal">Temperatures</h4>
             </div>
             <div class="card-body">
@@ -66,13 +73,12 @@
                 <li>Max temperature is <span id="max_temp"></span></li>
                 
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
               <h4 class="my-0 fw-normal">Humidity Info</h4>
             </div>
             <div class="card-body">
@@ -82,7 +88,6 @@
                 <li>Humidity is <span id="humidity"></span></li>
                 <li>Wind degree is <span id="wind_degrees"></span></li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
             </div>
           </div>
         </div>
@@ -98,7 +103,6 @@
                 <li>Sunrise is <span id="sunrise"></span></li>
                 <li>Sunset is <span id="sunset"></span></li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
             </div>
           </div>
         </div>
