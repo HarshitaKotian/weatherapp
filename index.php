@@ -51,7 +51,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success btn-warning" type="submit" id="submit">Search</button>
+          <button class="btn btn-outline-success btn-dark" type="submit" id="submit">Search</button>
         </form>
       </div>
     </div>
